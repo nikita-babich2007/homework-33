@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Alex Developer | Portfolio</title>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-slate-900 text-white w-100 py-3">
+      <div class="container">
+        <a class="navbar-brand font-bold text-xl tracking-wider" href="#">MY PORTFOLIO</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a class="nav-link active text-white hover:text-indigo-400 transition" aria-current="page"
+                href="#">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-gray-300 hover:text-indigo-400 transition" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-gray-300 hover:text-indigo-400 transition" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main flex-grow">
+    <section class="hero hero__container container mx-auto px-4 py-16 md:py-24">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+
+        <div class="hero__content w-full md:w-1/2 text-center md:text-left">
+          <h1 class="hero__title text-4xl md:text-5xl font-black text-slate-800 leading-tight mb-6">
+            Hi, I am Alex, <br>
+            <span class="text-indigo-600">Frontend Developer</span>
+          </h1>
+
+          <p class="hero__desc text-gray-600 text-lg mb-8 max-w-lg mx-auto md:mx-0">
+            Building responsive web applications with modern technologies.
+            Passionate about UI/UX and clean code standards.
+          </p>
+
+          <button
+            class="text-lg font-bold text-white bg-indigo-600 shadow-lg shadow-indigo-500/30 capitalize py-3 px-8 rounded-full hover:bg-indigo-700 hover:-translate-y-1 transition-all duration-300 ease-in-out">
+            Download Resume
+          </button>
+        </div>
+
+        <div class="hero__img-wrapper w-full md:w-1/2 flex justify-center md:justify-end">
+          <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+            <img src="./images/portfolio.png" alt="portfolio photo" class="object-cover w-full h-full">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-slate-100 py-12">
+      <div class="container mx-auto px-4">
+
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-xl font-bold text-slate-800">Recent posts</h2>
+          <a href="#" class="text-indigo-600 hover:underline text-sm font-medium">View all</a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-slate-800 mb-3">
+              Making a design system from scratch
+            </h3>
+            <div class="flex gap-4 text-slate-500 mb-4 text-sm font-medium border-r border-slate-300 pr-4">
+              <span>12 Feb 2025</span>
+              <span class="border-l border-slate-300 pl-4 text-slate-800">Design, Pattern</span>
+            </div>
+            <p class="text-slate-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim velit mollit.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+            <h3 class="text-2xl font-bold text-slate-800 mb-3">
+              Creating pixel-perfect icons
+            </h3>
+            <div class="flex gap-4 text-slate-500 mb-4 text-sm font-medium border-r border-slate-300 pr-4">
+              <span>05 Mar 2025</span>
+              <span class="border-l border-slate-300 pl-4 text-slate-800">Figma, Iconography</span>
+            </div>
+            <p class="text-slate-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim velit mollit.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer bg-white py-10 mt-auto">
+    <div class="container text-center">
+      <ul class="footer__social-navigation flex justify-center gap-8 mb-4 list-none p-0">
+        <li class="footer__social-item transition transform hover:scale-110">
+          <a href="#" class="footer__social-link text-slate-800 hover:text-indigo-600">
+            <svg class="w-8 h-8">
+              <use href="images/social-sprite-icons.svg#fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item transition transform hover:scale-110">
+          <a href="#" class="footer__social-link text-slate-800 hover:text-pink-600">
+            <svg class="w-8 h-8">
+              <use href="images/social-sprite-icons.svg#insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item transition transform hover:scale-110">
+          <a href="#" class="footer__social-link text-slate-800 hover:text-blue-400">
+            <svg class="w-8 h-8">
+              <use href="images/social-sprite-icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item transition transform hover:scale-110">
+          <a href="#" class="footer__social-link text-slate-800 hover:text-blue-700">
+            <svg class="w-8 h-8">
+              <use href="images/social-sprite-icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copy-text text-sm text-gray-500">Copyright ©2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
